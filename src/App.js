@@ -1,9 +1,9 @@
-
+import Home from "./views/Home";
 
 function App() {
   return (
     <div className="App">
-      <h1>Leef.</h1>
+      <Home />
     </div>
   );
 }
