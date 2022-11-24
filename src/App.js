@@ -1,10 +1,13 @@
 import Home from "./views/Home";
+import { Provider } from "react-redux";
+import store from "./state/store";
+import {AppRouter} from './routes';
 
 function App() {
   return (
-    <div className="App">
-      <Home />
-    </div>
+    <Provider store={store}>
+      <AppRouter />
+    </Provider>
   );
 }
 
